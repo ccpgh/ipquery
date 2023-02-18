@@ -239,7 +239,7 @@ if not do_add(ip_additions):
 
 if not do_delete(ip_deletions):
     stderr_fileno.write("do delete had errors\n")
-    exit_code = 2
+    exit_code += 2
 
 if not do_reload():
     stderr_fileno.write("do reload failed\n")
